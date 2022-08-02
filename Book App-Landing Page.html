@@ -9,6 +9,7 @@
     <style>
         html {  
             scroll-behavior: smooth;  
+           
         }
         h1{
             font-family:'Times New Roman';
@@ -35,8 +36,13 @@
             font-size: 16px;
         }
         body{
-            /*background-color: rgb(179, 141, 108);*/
-            background-image: "BG.png";
+            background-color: rgb(219, 195, 172);
+            background-blend-mode:soft-light;
+            background-image: url("BG.png");
+            width:100%; 
+            height:100%;
+            background-size: cover;
+           
         }
         nav{
             flex:1;
@@ -63,17 +69,35 @@
             color: white;
         }
 
+        div #Authors{
+            background-color: rgb(133, 245, 133);
+            background-color: #504f4e;
+            color: white;
+        }
+        div #Fav{
+            background-color: rgb(133, 245, 133);
+            background-color: #504f4e;
+            color: white;
+        }
+        div #Recomm{
+            background-color: rgb(133, 245, 133);
+            background-color: #504f4e;
+            color: white;
+        }
         div #Authors:hover{
             background-color: rgb(133, 245, 133);
-            
+            background-color: white;
+            color: black;
         }
         div #Fav:hover{
             background-color: rgb(133, 245, 133);
-            
+            background-color: white;
+            color: black;
         }
         div #Recomm:hover{
             background-color: rgb(133, 245, 133);
-            
+            background-color: white;
+            color: black;
         }
         div #x:hover{
             background-color:rgb(232, 198, 205);
@@ -88,7 +112,7 @@
 <body>
     <!--Header-->
 
-    <div class="container">
+    <div class="my-container">
         <div class="navbar">
             <a href="Book App-Landing page.html">
                 <h1 class="logo" style="text-align:left; color:rgb(54, 27, 8); "> Open Library</h1>
@@ -124,9 +148,10 @@
                 </ul>
             </nav>
         </div>
+        
     </div>
-
-    <hr style="border-style: solid; border-color: black;">
+    <hr style="border-style: solid; border-color:  black; border-width: 2px;">
+    
     
     <!--Below Header-->
 
@@ -151,9 +176,9 @@
 
     <!--Body Content-->
 
-    <div class="container">
+    <div class="container" id="BCbg">
 
-        <div style="border-style: groove; border-radius: 6px;" class="row" id="Authors">
+        <div style="border-style: groove; border-radius: 6px; border-width: 1px; border-color: black;" class="row" id="Authors">
             <div class="col-12">
                 <h3 style="text-align:center;">Authors</h3>
             </div>
@@ -195,7 +220,7 @@
 
         <br> <br>
 
-        <div style="border-style: groove; border-radius: 6px;" class="row" id="Fav">
+        <div style="border-style: groove; border-radius: 6px; border-width: 1px; border-color: black;" class="row" id="Fav">
             <div class="col-12">
                 <h3 style="text-align:center;">Favourites</h3>
             </div>
@@ -291,7 +316,7 @@
 
         <br> <br>
         
-        <div style="border-style: groove; border-radius: 6px;" class="row" id="Recomm">
+        <div style="border-style: groove; border-radius: 6px; border-width: 1px; border-color: black;" class="row" id="Recomm">
             <div class="col-12">
                 <h3 style="text-align:center;">Recommended</h3>
             </div>
@@ -388,7 +413,7 @@
     </div>
     <br> <br>
 
-    <hr style="border-style: solid; border-color: black;">
+    <hr style="border-style: solid; border-color: black; border-width: 2px;">
     
     <!--Footer-->
 
