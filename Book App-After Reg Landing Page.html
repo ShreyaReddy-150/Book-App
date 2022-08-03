@@ -34,11 +34,21 @@
             font-family:'Times New Roman';
             font-size: 16px;
         }
-        /*
-        body{
-            background-color: rgb(254, 231, 211);
+        body:before {
+            content: '';
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background-image: url("BG.png"); 
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            background-size: cover;
+            background-color: rgb(210, 191, 172);
+            background-blend-mode:soft-light;
+            filter: blur(1px);
+            z-index: -1;
         }
-        */
         nav{
             flex:1;
             text-align: right;
@@ -65,17 +75,35 @@
             color: white;
         }
 
+        div #Authors{
+            background-color: rgb(133, 245, 133);
+            background-color: #504f4e;
+            color: white;
+        }
+        div #Fav{
+            background-color: rgb(133, 245, 133);
+            background-color: #504f4e;
+            color: white;
+        }
+        div #Recomm{
+            background-color: rgb(133, 245, 133);
+            background-color: #504f4e;
+            color: white;
+        }
         div #Authors:hover{
             background-color: rgb(133, 245, 133);
-            
+            background-color: white;
+            color: black;
         }
         div #Fav:hover{
             background-color: rgb(133, 245, 133);
-            
+            background-color: white;
+            color: black;
         }
         div #Recomm:hover{
             background-color: rgb(133, 245, 133);
-            
+            background-color: white;
+            color: black;
         }
         div #x:hover{
             background-color:rgb(232, 198, 205);
@@ -83,13 +111,16 @@
         }
         
     </style>
+
+    <!--Google Icons-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
 </head>
 <body>
+
     <!--Header-->
 
-    <div class="my-container">
+    <div class="my-container" style="background-color: #99B0A8;">
         <div class="navbar">
             <a href="Book App-Landing page.html">
                 <h1 class="logo" style="text-align:left; color:rgb(54, 27, 8);"> Open Library</h1>
@@ -131,13 +162,14 @@
             </nav>
            
         </div>
+        <hr style="border-style: solid; border-color:  black; border-width: 2px;">
     </div>
 
-    <hr style="border-style: solid; border-color: black;">
     
-    <!--Below Header-->
+    
+     <!--Below Header-->
 
-    <div class="container">
+     <div class="container">
         <div style="width: auto; height: auto;" class="row">
             <div style="text-align: center;" class="col">
                 <h4 style="font-weight: 200; margin-top: 100px;">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magni ab ad corporis nemo id."</h4>
@@ -145,7 +177,7 @@
                 <h5 style="font-weight: 500; margin: 5px; font-weight:bold;">Book Name</h5>
                 <h5 style="font-weight: 400; margin: 5px;">Author Name</h5>
                 <br>
-                <input id="COB" type="button" value="Check out book ->" style="border-color: grey;">
+                <input id="COB" type="button" value="Check out book ->" style="border-color: grey; background-color: #B6A999;">
             </div>
             <div style="text-align: center;" class="col">
                 <img src="Reading.png" height="350px" width="350px">
@@ -160,7 +192,7 @@
 
     <div class="container">
 
-        <div style="border-style: groove; border-radius: 6px;" class="row" id="Authors">
+        <div style="border-style: groove; border-radius: 6px; border-width: 1px; border-color: black;" class="row" id="Authors">
             <div class="col-12">
                 <h3 style="text-align:center;">Authors</h3>
             </div>
@@ -202,7 +234,7 @@
 
         <br> <br>
 
-        <div style="border-style: groove; border-radius: 6px;" class="row" id="Fav">
+        <div style="border-style: groove; border-radius: 6px; border-width: 1px; border-color: black;" class="row" id="Fav">
             <div class="col-12">
                 <h3 style="text-align:center;">Favourites</h3>
             </div>
@@ -298,7 +330,7 @@
 
         <br> <br>
         
-        <div style="border-style: groove; border-radius: 6px;" class="row" id="Recomm">
+        <div style="border-style: groove; border-radius: 6px; border-width: 1px; border-color: black;" class="row" id="Recomm">
             <div class="col-12">
                 <h3 style="text-align:center;">Recommended</h3>
             </div>
@@ -395,12 +427,14 @@
     </div>
     <br> <br>
 
-    <hr style="border-style: solid; border-color: black;">
+    
     
     <!--Footer-->
 
-    <div class="container">
-        <div class="row">
+    <div class="my-container" style="background-color: #99B0A8; ">
+        <hr style="border-style: solid; border-color: black; border-width: 2px;">
+
+        <div class="row" style="margin-left: 90px;">
 
             <div style="text-align: justify;" class="col">
                 <h5 style="font-weight:bold;">Open Library</h5>
@@ -442,10 +476,9 @@
             </div>
 
         </div>
+        <br> 
+        <h6 style="text-align: center;">All rights are reserved &copy; 2022</h6>
+        <br>
     </div>
-
-    <br> 
-    <h6 style="text-align: center;">All rights are reserved &copy; 2022</h6>
-    
 </body>
 </html>
