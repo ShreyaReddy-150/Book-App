@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Store</title>
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <style>
         html {  
             scroll-behavior: smooth;  
@@ -34,11 +34,7 @@
             font-family:'Times New Roman';
             font-size: 16px;
         }
-        /*
-        body{
-            background-color: rgb(254, 231, 211);
-        }
-        */
+    
         nav{
             flex:1;
             text-align: right;
@@ -47,57 +43,176 @@
             list-style: none;
             display: inline-block;
             margin-left: 20px;
+            margin-top: 10px;
         }
         #search{
             margin-left: 50px;
-        }
-        #button{
-            background-color: blanchedalmond;
+            background-color: #DFE0DF;
             border-radius: 6px;
-            border-color: blanchedalmond;
+            border-style: groove;
+        }
+        #RLbutton{
+            background-color: #66798D;
+            border-radius: 6px;
+            border-color: #66798D;
             margin-top: 15px;
             margin-left: 10px;
+            color: white;
         }
-        table{
-            border: 1px solid black;
-            margin-left: 25%;
-            
-        }
-        tr{
-            border: 1px solid black;
-            
-        }
-        td{
-            border: 1px solid black;
-            column-width: 200px;
-            text-align: center;
-        }
-        th{
-            border: 1px solid black;
-        }
-        #RstBtn{
-            vertical-align:bottom; 
-            height: 40px; 
-            width: 80px;
-            background-color: rgb(237, 105, 105);
-            border-color: rgb(237, 105, 105);
+        #WLbutton{
+            background-color: #66798D;
             border-radius: 6px;
-            text-align: center;
+            border-color: #66798D;
+            margin-top: 15px;
+            margin-left: 10px;
+            color: white;
         }
-        #CR{
-            vertical-align:bottom; 
-            height: 40px; 
-            width: 160px;
+        #WLNAbutton{
+            background-color: rgb(75, 75, 75);
             border-radius: 6px;
-            background-color: rgb(114, 184, 96);
-            border-color: rgb(114, 184, 96);
-            text-align: center;
-             /*background-image: linear-gradient(to right,darkgreen,white);*/
+            border-color: rgb(75, 75, 75);
+            margin-top: 15px;
+            margin-left: 10px;
+            color: white;
+        }
+       
+        #RLC{
+            height: 400px;
+            /* border: 1px solid black;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .subcontainer{
+            width: 85%;
+            margin:auto;
+        }
+
+        .controller{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .previous, .next, .prev, .nex {
+            padding: 2px;
+            width: 30px;
+            cursor: pointer;
+            border-radius: 50%;
+            outline: none;
+            transition: 0.7s ease-in-out;
+            border: 3px solid black;
+        }
+
+        .previous:hover, .next:hover, .prev:hover, .nex:hover{
+            background-color: #ccbee0;
+        }
+
+        .slide:hover{
+            border: 1px solid black;
+            /*background-color: #9FADBD;*/
+            background-image: url("RLBG.jpg");
+            padding: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            box-shadow: 10px 5px 5px #888888;
+        }
+
+        .slide-img{
+            width: 180px;
+            height: 290px;
+            background-position:center;
+            background-size: cover;
+            cursor:pointer;
+            display: flex; /*Text is placed in the center instead of top left*/
+            justify-content: center; /*Text is placed in the center instead of left*/
+            align-items: center; /*Text is placed in the center instead of top*/
+            transition: 0.5s;
+        }
+
+        .slide-img:hover{
+            box-shadow: 0 0 0 200px rgb(130, 130, 130) inset;
+        }
+
+        .slide-img a{
+            text-decoration: none;
+            transform: scale(0);
+            transition: 0.8s;
+            font-size: 1.5rem;
+            color: black;
+            opacity:0;
+        }
+        
+        .slide-img:hover a{
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .rli1{
+            background-image: url("RL1.jpg");
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        .rli2{
+            background-image: url("RL2.jpg");
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        .rli3{
+            background-image: url("RL3.jpg");
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        .rli4{
+            background-image: url("RL4.jpg");
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        .rli5{
+            background-image: url("RL5.jpg");
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        .wli1{
+            background-image: url("WL1.jpg");
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        .wli2{
+            background-image: url("WL2.jpg");
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        .wli3{
+            background-image: url("WL3.jpg");
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        .wli4{
+            background-image: url("WL4.jpg");
+            border: 1px solid black;
+            border-radius: 6px;
+        }
+
+        .wli5{
+            background-image: url("WL5.jpg");
+            border: 1px solid black;
+            border-radius: 6px;
         }
         
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 </head>
 <body>
 
@@ -108,7 +223,7 @@
             <a href="Book App-After Reg Landing Page.html">
                 <h1 class="logo" style="text-align:left; color:rgb(54, 27, 8);"> Open Library</h1>
             </a>
-            <input id="search" type="text" placeholder="Search" size="30px">
+            <input id="search" type="text" placeholder="Search" size="50px">
             <nav>
                 <ul>
                     <li>
@@ -126,9 +241,14 @@
                     <li>
                         <a href="#Recomm"><h3 style="text-align: center; color:rgb(54, 27, 8); font-size:medium;"> Recommended </h3></a>
                     </li>
-                    <li>
-                        <a href="Book App-WishList Page.html">
-                            <input id="button" type="button" value="My WishList">
+                    <li style="margin-left: 50px; margin-right: 10px;">
+                        <a href="Book App-WishList Page.html" style="text-decoration: none;">
+                            <span class="material-symbols-outlined" style="font-size: 27px; color: black; vertical-align: middle;">bookmarks</span>
+                        </a>
+                    </li>
+                    <li style="margin-right: 30px;">
+                        <a href="Book App-WishList Page.html" style="text-decoration: none;">
+                            <span class="material-symbols-outlined" style="font-size: 30px; color: black; vertical-align: middle;">account_box</span>
                         </a>
                     </li>
                 </ul>
@@ -140,109 +260,327 @@
     
     <br>
 
-    <!--Body Content-->
-    <h2 style="text-align: center;">My Reading List</h2>
-    <br>
-    <table>
-        <tr>
-            <th style="text-align: center;">Name</th>
-            <th style="text-align: center;">Author</th>
-            <th style="text-align: center;">Action</th>
-        </tr>
-        <tr>
-            <td>Book Name 1</td>
-            <td>Author Name 1</td>
-            <td style="column-width: 250px;">
-                <input id="CR" type="button" value="Continue Reading">
-                <input id="RstBtn" type="button" value="Delete">
-            </td>
-        </tr>
-        <tr>
-            <td>Book Name 2</td>
-            <td>Author Name 2</td>
-            <td style="column-width: 250px;">
-                <input id="CR" type="button" value="Continue Reading">
-                <input id="RstBtn" type="button" value="Delete">
-            </td>
-        </tr>
-        <tr>
-            <td>Book Name 3</td>
-            <td>Author Name 3</td>
-            <td style="column-width: 250px;">
-                <input id="CR" type="button" value="Continue Reading">
-                <input id="RstBtn" type="button" value="Delete">
-            </td>
-        </tr>
-        <tr>
-            <td>Book Name 4</td>
-            <td>Author Name 4</td>
-            <td style="column-width: 250px;">
-                <input id="CR" type="button" value="Read">
-                <input id="RstBtn" type="button" value="Delete">
-            </td>
-        </tr>
-        <tr>
-            <td>Book Name 5</td>
-            <td>Author Name 5</td>
-            <td style="column-width: 250px;">
-                <input id="CR" type="button" value="Read">
-                <input id="RstBtn" type="button" value="Delete">
-            </td>
-        </tr>
-    </table>
+    <!--Body Content
+    <h2 style="text-align: center;">My Reading List</h2> -->
+    <br> <br> <br>
 
-    <br> <br>
+    <!--Reading List Content-->
 
-     <!--Footer-->
+    <section id="RLC">
+        <div class="container">
+            <div class="subcontainer">
+                <div class="slide-wrapper">
+                    <div class="controller">
+                        <div>
+                            <h3>Reading List</h3>
+                        </div>
+                        <div id="controls">
+                            <button class="previous">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <button class="next">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
 
-     <div class="my-container" style="background-color: #99B0A8; ">
+                        <br>
+
+                        <div class="my-slider">
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img rli1" style="margin-left: 18%;">
+                                        <a href="#">
+                                            <h5 style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dicta provident maxime ad, veritatis facilis cum quos magni, voluptates quae, quas sed autem voluptatibus necessitatibus neque magnam id ullam quidem.</h5>
+                                        </a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h5 style="text-align: center; font-weight: 550;">The Hobbit</h5>
+                                        <h6 style="text-align: center;">J.R.R. Tolkien</h6>
+                                        <input id="RLbutton" type="button" value="Continue Reading" style="margin-left: 25%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img rli2" style="margin-left: 18%;">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h5 style="text-align: center; font-weight: 550;">The Invisible Man</h5>
+                                        <h6 style="text-align: center;">H. G. Wells</h6>
+                                        <input id="RLbutton" type="button" value="Continue Reading" style="margin-left: 25%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img rli3" style="margin-left: 18%;">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h5 style="text-align: center; font-weight: 550;">Atomic Habits</h5>
+                                        <h6 style="text-align: center;">James Clear</h6>
+                                        <input id="RLbutton" type="button" value="Continue Reading" style="margin-left: 25%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img rli4" style="margin-left: 18%;">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h5 style="text-align: center; font-weight: 550;">The Lightning Thief</h5>
+                                        <h6 style="text-align: center;">Rick Riordan</h6>
+                                        <input id="RLbutton" type="button" value="Continue Reading" style="margin-left: 25%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img rli5" style="margin-left: 18%;">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h5 style="text-align: center; font-weight: 550;">Thinking Fast and Slow</h5>
+                                        <h6 style="text-align: center;">Daniel kahneman</h6>
+                                        <input id="RLbutton" type="button" value="Continue Reading" style="margin-left: 25%;">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <br> <br> <br> <br> <br> <br> <br> 
+
+     <!--WishList Content-->
+    
+     <section id="RLC">
+        <div class="container">
+            <div class="subcontainer">
+                <div class="slide-wrapper">
+                    <div class="controller">
+                        <div>
+                            <h3>WishList</h3>
+                        </div>
+                        <div id="control">
+                            <button class="prev">
+                                <i class="fa-solid fa-angle-left"></i>
+                            </button>
+                            <button class="nex">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                        <br>
+
+                        <div class="my-slider1">
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img wli1" style="margin-left: 18%;">
+                                        <a href="#">
+                                            <h5 style="text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, nisi.</h5>
+                                        </a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h5 style="text-align: center; font-weight: 550;">Diary of a Wimpy Kid: Rodrick Rules</h5>
+                                        <h6 style="text-align: center;">Jeff Kinney</h6>
+                                        <input id="WLbutton" type="button" value="Read Now" style="margin-left: 35%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img wli2" style="margin-left: 18%;">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h5 style="text-align: center; font-weight: 550;">Raiders Of The Lost Ark Novelization (Indiana Jones)</h5>
+                                        <h6 style="text-align: center;">Ryder Windham</h6>
+                                        <input id="WLbutton" type="button" value="Read Now" style="margin-left: 35%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img wli3" style="margin-left: 18%;">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h5 style="text-align: center; font-weight: 550;">The Green Mile: The Complete Serial Novel</h5>
+                                        <h6 style="text-align: center;">Stephen King</h6>
+                                        <input id="WLNAbutton" type="button" value="Notify Me" style="margin-left: 35%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img wli4" style="margin-left: 18%;">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h5 style="text-align: center; font-weight: 550;">Christmas At The Cupcake Cafe</h5>
+                                        <h6 style="text-align: center;">Jenny Colgan</h6>
+                                        <input id="WLNAbutton" type="button" value="Notify Me" style="margin-left: 35%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="slide">
+                                    <div class="slide-img wli5" style="margin-left: 18%;">
+                                        <a href="#">Learn More</a>
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <h5 style="text-align: center; font-weight: 550;">The Hound of the Baskervilles</h5>
+                                        <h6 style="text-align: center;">Arthur Conan Doyle</h6>
+                                        <input id="WLbutton" type="button" value="Read Now" style="margin-left: 35%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <br> <br> <br> <br>
+
+    <!--Footer-->
+
+    <div class="my-container" style="background-color: #99B0A8; ">
+        
         <hr style="border-style: solid; border-color: black; border-width: 2px;">
+        
+        <div class="container">
 
-        <div class="row" style="margin-left: 90px;">
+            <div class="row">
 
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Open Library</h5>
-                <h6 style="font-weight: 200;">Vision</h6>
-                <h6 style="font-weight: 200;">Volunteer</h6>
-                <h6 style="font-weight: 200;">Partner with us</h6>
-                <h6 style="font-weight: 200;">Careers</h6>
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Open Library</h5>
+                    <h6 style="font-weight: 200;">Vision</h6>
+                    <h6 style="font-weight: 200;">Volunteer</h6>
+                    <h6 style="font-weight: 200;">Partner with us</h6>
+                    <h6 style="font-weight: 200;">Careers</h6>
+                </div>
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Discover</h5>
+                    <h6 style="font-weight: 200;">Home</h6>
+                    <h6 style="font-weight: 200;">Books</h6>
+                    <h6 style="font-weight: 200;">Authors</h6>
+                    <h6 style="font-weight: 200;">Collections</h6>
+                </div>
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Develop</h5>
+                    <h6 style="font-weight: 200;">Developer Center</h6>
+                    <h6 style="font-weight: 200;">API Documentation</h6>
+                    <h6 style="font-weight: 200;">Add a Book</h6>
+                    <h6 style="font-weight: 200;">Writing Bots</h6>
+                </div>
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Help</h5>
+                    <h6 style="font-weight: 200;">Help Center</h6>
+                    <h6 style="font-weight: 200;">Report a Problem</h6>
+                    <h6 style="font-weight: 200;">Suggest Edits</h6>
+                </div>
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Language</h5>
+                    <h6 style="font-weight: 200;">English (en)</h6>
+                    <h6 style="font-weight: 200;">한국어 (ko)</h6>
+                    <h6 style="font-weight: 200;">Français (fr)</h6>
+                    <h6 style="font-weight: 200;">Deutsch (de)</h6>
+                </div>
+
             </div>
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Discover</h5>
-                <h6 style="font-weight: 200;">Home</h6>
-                <h6 style="font-weight: 200;">Books</h6>
-                <h6 style="font-weight: 200;">Authors</h6>
-                <h6 style="font-weight: 200;">Collections</h6>
-            </div>
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Develop</h5>
-                <h6 style="font-weight: 200;">Developer Center</h6>
-                <h6 style="font-weight: 200;">API Documentation</h6>
-                <h6 style="font-weight: 200;">Add a Book</h6>
-                <h6 style="font-weight: 200;">Writing Bots</h6>
-            </div>
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Help</h5>
-                <h6 style="font-weight: 200;">Help Center</h6>
-                <h6 style="font-weight: 200;">Report a Problem</h6>
-                <h6 style="font-weight: 200;">Suggest Edits</h6>
-            </div>
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Language</h5>
-                <h6 style="font-weight: 200;">English (en)</h6>
-                <h6 style="font-weight: 200;">한국어 (ko)</h6>
-                <h6 style="font-weight: 200;">Français (fr)</h6>
-                <h6 style="font-weight: 200;">Deutsch (de)</h6>
-            </div>
-
+            <br> 
+            <h6 style="text-align: center;">All rights are reserved &copy; 2022</h6>
+            <br>
+            
         </div>
-        <br> 
-        <h6 style="text-align: center;">All rights are reserved &copy; 2022</h6>
-        <br>
     </div>
+
+    <script>
+        let slider = tns({
+    container : ".my-slider",
+    "slideBy" : 1,
+    "speed" : 400,
+    "nav" : false,
+    controlsContainer : "#controls",
+    prevButton : ".previous",
+    nextButton : ".next",
+    responsive : {
+        1600:{
+            items:4,
+            gutter: 20
+        },
+        1024:{
+            items:3,
+            gutter: 20
+        },
+        768:{
+            items:2,
+            gutter:20
+        },
+        480:{
+            items:1
+        }
+    }
+})
+    let slider1 = tns({
+    container : ".my-slider1",
+    "slideBy" : 1,
+    "speed" : 400,
+    "nav" : false,
+    controlsContainer : "#control",
+    prevButton : ".prev",
+    nextButton : ".nex",
+    responsive : {
+        1600:{
+            items:4,
+            gutter: 20
+        },
+        1024:{
+            items:3,
+            gutter: 20
+        },
+        768:{
+            items:2,
+            gutter:20
+        },
+        480:{
+            items:1
+        }
+    }
+})
+    </script>
 </body>
 </html>

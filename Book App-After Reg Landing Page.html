@@ -61,6 +61,9 @@
         }
         #search{
             margin-left: 50px;
+            background-color: #DFE0DF;
+            border-radius: 6px;
+            border-style: groove;
         }
         #button{
             background-color: blanchedalmond;
@@ -125,7 +128,7 @@
             <a href="Book App-Landing page.html">
                 <h1 class="logo" style="text-align:left; color:rgb(54, 27, 8);"> Open Library</h1>
             </a>
-            <input id="search" type="text" placeholder="Search" size="30px">
+            <input id="search" type="text" placeholder="Search" size="50px">
             <nav>
                 <ul>
                     <li>
@@ -143,12 +146,13 @@
                     <li>
                         <a href="#Recomm"><h3 style="text-align: center; color:rgb(54, 27, 8); font-size:medium;"> Recommended </h3></a>
                     </li>
+                    <!--
                     <li>
                         <a href="Book App-WishList Page.html">
                             <input id="button" type="button" value="My WishList">
                         </a>
                     </li>
-                    
+                    -->
                     <!--
                     <li>
                         <button style="vertical-align:middle; border: 0px; background-color: white;">
@@ -157,6 +161,17 @@
                         </button>
                     </li>
                     -->
+
+                    <li style="margin-left: 50px; margin-right: 10px;">
+                        <a href="Book App-WishList Page.html" style="text-decoration: none;">
+                            <span class="material-symbols-outlined" style="font-size: 27px; color: black; vertical-align: middle;">bookmarks</span>
+                        </a>
+                    </li>
+                    <li style="margin-right: 30px;">
+                        <a href="Book App-WishList Page.html" style="text-decoration: none;">
+                            <span class="material-symbols-outlined" style="font-size: 30px; color: black; vertical-align: middle;">account_box</span>
+                        </a>
+                    </li>
                     
                 </ul>
             </nav>
@@ -432,53 +447,58 @@
     <!--Footer-->
 
     <div class="my-container" style="background-color: #99B0A8; ">
+        
         <hr style="border-style: solid; border-color: black; border-width: 2px;">
+        
+        <div class="container">
 
-        <div class="row" style="margin-left: 90px;">
+            <div class="row">
 
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Open Library</h5>
-                <h6 style="font-weight: 200;">Vision</h6>
-                <h6 style="font-weight: 200;">Volunteer</h6>
-                <h6 style="font-weight: 200;">Partner with us</h6>
-                <h6 style="font-weight: 200;">Careers</h6>
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Open Library</h5>
+                    <h6 style="font-weight: 200;">Vision</h6>
+                    <h6 style="font-weight: 200;">Volunteer</h6>
+                    <h6 style="font-weight: 200;">Partner with us</h6>
+                    <h6 style="font-weight: 200;">Careers</h6>
+                </div>
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Discover</h5>
+                    <h6 style="font-weight: 200;">Home</h6>
+                    <h6 style="font-weight: 200;">Books</h6>
+                    <h6 style="font-weight: 200;">Authors</h6>
+                    <h6 style="font-weight: 200;">Collections</h6>
+                </div>
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Develop</h5>
+                    <h6 style="font-weight: 200;">Developer Center</h6>
+                    <h6 style="font-weight: 200;">API Documentation</h6>
+                    <h6 style="font-weight: 200;">Add a Book</h6>
+                    <h6 style="font-weight: 200;">Writing Bots</h6>
+                </div>
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Help</h5>
+                    <h6 style="font-weight: 200;">Help Center</h6>
+                    <h6 style="font-weight: 200;">Report a Problem</h6>
+                    <h6 style="font-weight: 200;">Suggest Edits</h6>
+                </div>
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Language</h5>
+                    <h6 style="font-weight: 200;">English (en)</h6>
+                    <h6 style="font-weight: 200;">한국어 (ko)</h6>
+                    <h6 style="font-weight: 200;">Français (fr)</h6>
+                    <h6 style="font-weight: 200;">Deutsch (de)</h6>
+                </div>
+
             </div>
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Discover</h5>
-                <h6 style="font-weight: 200;">Home</h6>
-                <h6 style="font-weight: 200;">Books</h6>
-                <h6 style="font-weight: 200;">Authors</h6>
-                <h6 style="font-weight: 200;">Collections</h6>
-            </div>
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Develop</h5>
-                <h6 style="font-weight: 200;">Developer Center</h6>
-                <h6 style="font-weight: 200;">API Documentation</h6>
-                <h6 style="font-weight: 200;">Add a Book</h6>
-                <h6 style="font-weight: 200;">Writing Bots</h6>
-            </div>
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Help</h5>
-                <h6 style="font-weight: 200;">Help Center</h6>
-                <h6 style="font-weight: 200;">Report a Problem</h6>
-                <h6 style="font-weight: 200;">Suggest Edits</h6>
-            </div>
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Language</h5>
-                <h6 style="font-weight: 200;">English (en)</h6>
-                <h6 style="font-weight: 200;">한국어 (ko)</h6>
-                <h6 style="font-weight: 200;">Français (fr)</h6>
-                <h6 style="font-weight: 200;">Deutsch (de)</h6>
-            </div>
+            <br> 
+            <h6 style="text-align: center;">All rights are reserved &copy; 2022</h6>
+            <br>
 
         </div>
-        <br> 
-        <h6 style="text-align: center;">All rights are reserved &copy; 2022</h6>
-        <br>
     </div>
 </body>
 </html>

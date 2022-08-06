@@ -40,13 +40,13 @@
             position: fixed;
             width: 100vw;    
             height: 100vh;
-            background-image: url("BG.png"); 
+            background-image: url("BG3.PNG"); 
             background-position: center center;
             background-repeat: no-repeat;
             background-position: 100% ;
             background-size: cover;
-            background-color: rgb(210, 191, 172);
-            background-blend-mode:soft-light;
+            /*background-color: rgb(210, 191, 172);
+            background-blend-mode:soft-light;*/
             filter: blur(1px);
             z-index: -1;
         }
@@ -74,7 +74,6 @@
         }
         
         div input#COB:hover{
-            background-color: #383736;
             color: white;
         }
 
@@ -111,10 +110,6 @@
         div #x:hover{
             background-color:rgb(232, 198, 205);
             border-radius: 10px;
-        }
-        .container {
-            max-width: 95%;
-            /*overflow-x: hidden;*/
         }
         
     </style>
@@ -178,7 +173,7 @@
                 <h5 style="font-weight: 500; margin: 5px; font-weight:bold;">Book Name</h5>
                 <h5 style="font-weight: 400; margin: 5px;">Author Name</h5>
                 <br>
-                <input id="COB" type="button" value="Check out book ->" style="border-color: grey; background-color: #B6A999;">
+                <input id="COB" type="button" value="Check out book ->" style="border-color: grey; background-color: #9b9696;">
             </div>
             <div style="text-align: center;" class="col">
                 <img src="Reading.png" height="350px" width="350px">
@@ -432,58 +427,59 @@
     
     <!--Footer-->
 
-    
     <div class="my-container" style="background-color: #99B0A8;">
         
         <hr style="border-style: solid; border-color: black; border-width: 2px;">
-
-        <div class="row" style="margin-left: 70px;">
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Open Library</h5>
-                <h6 style="font-weight: 200;">Vision</h6>
-                <h6 style="font-weight: 200;">Volunteer</h6>
-                <h6 style="font-weight: 200;">Partner with us</h6>
-                <h6 style="font-weight: 200;">Careers</h6>
-            </div>
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Discover</h5>
-                <h6 style="font-weight: 200;">Home</h6>
-                <h6 style="font-weight: 200;">Books</h6>
-                <h6 style="font-weight: 200;">Authors</h6>
-                <h6 style="font-weight: 200;">Collections</h6>
-            </div>
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Develop</h5>
-                <h6 style="font-weight: 200;">Developer Center</h6>
-                <h6 style="font-weight: 200;">API Documentation</h6>
-                <h6 style="font-weight: 200;">Add a Book</h6>
-                <h6 style="font-weight: 200;">Writing Bots</h6>
-            </div>
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Help</h5>
-                <h6 style="font-weight: 200;">Help Center</h6>
-                <h6 style="font-weight: 200;">Report a Problem</h6>
-                <h6 style="font-weight: 200;">Suggest Edits</h6>
-            </div>
-
-            <div style="text-align: justify;" class="col">
-                <h5 style="font-weight:bold;">Language</h5>
-                <h6 style="font-weight: 200;">English (en)</h6>
-                <h6 style="font-weight: 200;">한국어 (ko)</h6>
-                <h6 style="font-weight: 200;">Français (fr)</h6>
-                <h6 style="font-weight: 200;">Deutsch (de)</h6>
-            </div>
-
-        </div>
-        <br> 
-
-        <h6 style="text-align: center;">All rights are reserved &copy; 2022</h6>
         
-        <br>
+        <div class="container">
+
+            <div class="row">
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Open Library</h5>
+                    <h6 style="font-weight: 200;">Vision</h6>
+                    <h6 style="font-weight: 200;">Volunteer</h6>
+                    <h6 style="font-weight: 200;">Partner with us</h6>
+                    <h6 style="font-weight: 200;">Careers</h6>
+                </div>
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Discover</h5>
+                    <h6 style="font-weight: 200;">Home</h6>
+                    <h6 style="font-weight: 200;">Books</h6>
+                    <h6 style="font-weight: 200;">Authors</h6>
+                    <h6 style="font-weight: 200;">Collections</h6>
+                </div>
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Develop</h5>
+                    <h6 style="font-weight: 200;">Developer Center</h6>
+                    <h6 style="font-weight: 200;">API Documentation</h6>
+                    <h6 style="font-weight: 200;">Add a Book</h6>
+                    <h6 style="font-weight: 200;">Writing Bots</h6>
+                </div>
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Help</h5>
+                    <h6 style="font-weight: 200;">Help Center</h6>
+                    <h6 style="font-weight: 200;">Report a Problem</h6>
+                    <h6 style="font-weight: 200;">Suggest Edits</h6>
+                </div>
+
+                <div style="text-align: justify;" class="col">
+                    <h5 style="font-weight:bold;">Language</h5>
+                    <h6 style="font-weight: 200;">English (en)</h6>
+                    <h6 style="font-weight: 200;">한국어 (ko)</h6>
+                    <h6 style="font-weight: 200;">Français (fr)</h6>
+                    <h6 style="font-weight: 200;">Deutsch (de)</h6>
+                </div>
+
+            </div>
+            <br> 
+            <h6 style="text-align: center;">All rights are reserved &copy; 2022</h6>
+            <br>
+            
+        </div>
     </div>
 </body>
 </html>
