@@ -64,7 +64,7 @@
         #SubBtn{
             vertical-align:bottom; 
             margin-top: 15px;
-            margin-left: 50px; 
+            margin-left: 190px; 
             height: 40px; 
             width: 80px;
             background-color: rgb(114, 184, 96);
@@ -90,7 +90,7 @@
         
     </style>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
@@ -119,9 +119,15 @@
                     <li>
                         <a href="#Recomm"><h3 style="text-align: center; color:rgb(54, 27, 8); font-size:medium;"> Recommended </h3></a>
                     </li>
-                    <li>
+                    <li style="margin-left: 50px; margin-right: 10px;">
+                        <a href="Book App-WishList Page.html" style="text-decoration: none;">
+                            <span class="material-symbols-outlined" style="font-size: 27px; color: black; vertical-align: middle;">bookmarks</span>
+                        </a>
+                    </li>
+                    <li style="margin-right: 30px; margin-top: 10px;">
                         <a href="Book App-Profile Page.html" style="text-decoration: none;">
-                            <span class="material-symbols-outlined" style="font-size: 30px; color: black; vertical-align: middle;">account_box</span></a>
+                            <img src="img_avatar1.png" width="40px" height="40px" style="vertical-align: middle; border-radius: 30px;">
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -142,19 +148,37 @@
         
         <div class="row">
             <div style="height:fit-content; width:fit-content;" class="col">
+                Profile photo <br> <br>
+                <input type="radio" name="gender"  checked> <img src="img_avatar1.png" width="50px" height="50px"> |
+                <input type="radio" name="gender"> <img src="img_avatar2.png" width="50px" height="50px"> | 
+                <input type="radio" name="gender"> <img src="img_avatar3.png" width="50px" height="50px"> | 
+                <input type="radio" name="gender"> <img src="img_avatar4.png" width="50px" height="50px"> | 
+                <input type="radio" name="gender"> <img src="img_avatar5.png" width="50px" height="50px"> 
+                <br> <br>
                 <form>
-                    Profile photo <img src="img_avatar1.png" width="50px" height="50px" border-radius="50%"  ><i class="fa fa-pencil"></i>
+                    Name 
+                    <i class="fa fa-user fa-edit" style="margin-left: 461px; padding: 1px;"></i> 
+                    <input type="text" id="name" class="form-control" value="ABC DEF" maxlength="20" required readonly>
+                    <br>   
+                    Email 
+                    <i class="fa fa-user fa-edit" style="margin-left: 465px; padding: 1px;"></i>
+                    <input type="email" id="email" class="form-control" value="ABC@def.com" required readonly> 
                     <br>
-                    Name <input type="text" id="name" class="form-control" maxlength="20" value="abc" required><i class="fa fa-pencil"></i> <br>
-                    Email <input type="email" id="email" class="form-control" required> <br>
-                    Phone number <input type="phone number"  class="form-control"  required> <br>
-                    Change Password <input type="password" class="form-control" name="password" value=""> <br>
-                    Confirm Password <input type="password"  class="form-control" name="password" value="" >
-                      <br>
+                    Phone No.
+                    <i class="fa fa-user fa-edit" style="margin-left: 430px; padding: 1px;"></i>
+                    <input type="number"  class="form-control" value=1234567890 required readonly> 
+                    <br>
+                    Change Password 
+                    <input type="password" class="form-control" name="password" value=""> 
+                    <br>
+                    Confirm Password 
+                    <input type="password"  class="form-control" name="password" value="" >
+                    <br>
                     
                     <a href="Book App-After Reg Landing Page.html">
                         <input id="SubBtn" type="button" value="Save"> 
                     </a>
+
                 </form>
                 <br> <br>
                 
@@ -166,6 +190,7 @@
     </div>
 
     <br> <br>
+
 <!--Footer-->
 
 <div class="my-container" style="background-color: #99B0A8; ">
