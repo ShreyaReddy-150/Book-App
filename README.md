@@ -1,6 +1,9 @@
 # Book-App
 
 ## Landing Page
+1) On the Landing page, famous quotes from books will be displayed along with the link to access the book. This will help boost the visibility of the books on the website.
+2) You can find links to access books of different Authors, Crowd Favourites and Recommended books on the header of the page.
+3) Login and Register options can be found on the top right of the page.
 ![image](https://user-images.githubusercontent.com/110247732/184634567-54dde62e-306f-4f7a-92a7-3d9944bb9afc.png)
 
 ## Login Page
